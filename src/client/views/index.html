@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <link rel="stylesheet" href="/styles/resets.css">
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/form.css">
+        <link rel="stylesheet" href="/styles/footer.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header__logo">
+                <img id = "logo" alt = "Logo">
+            </div>
+            <div class="header__nav">
+                <ol>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
+            </div>
+        </header>
+
+        <main id = "search">
+            <section>
+                <h2>Text Sentiment Search</h2>
+                <form class="" onsubmit="return handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter HTTP URL here">
+                    <input type="submit" name="" value="SUBMIT" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            <section>
+
+            <section>
+                
+                <div id="results">
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer id = "contact">
+            <p>This is made with ♥ by Huyen Nguyen</p>
+        </footer>
+
+        <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+        </script>   
+        
+    </body>
+</html>
