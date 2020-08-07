@@ -50,8 +50,7 @@ https://www.meaningcloud.com/
 
 ## Deployment
 
-Link to the webpage: https://h-weather-journal.herokuapp.com/
-
+Link to the webpage: https://huyen-news-sentiment-analysis.herokuapp.com/
 ## Built With
 
 * SCSS
